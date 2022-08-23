@@ -1,0 +1,230 @@
+:root {
+  /* Fonts */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  /* Text */
+  --main-headers-color: #212121;
+  --main-txt-color: #757575;
+  --main-accent-color: #2196f3;
+  --light-txt-color: #ffffff;
+  --light-footer-links-cl: rgba(255, 255, 255, 0.6);
+
+  /* Background */
+  background-color: #ffffff;
+  --background-secondary-cl: #2f303a;
+  --background-elements: #f5f4fa;
+  /* Other */
+}
+
+/* .page { */
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-color);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+/* reset */
+.link,
+.link-h-act-cont {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* шапка */
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--main-headers-color);
+  text-decoration: none;
+}
+
+.logo-first-word {
+  color: var(--main-accent-color);
+}
+
+.header .link,
+.link-h-act-cont {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.header .link {
+  color: var(--main-headers-color);
+}
+
+.link-h-act-cont {
+  color: var(--main-txt-color);
+}
+
+/* + лого */
+.link-h-act-cont:hover,
+.link-h-act-cont:focus,
+.header .link:hover,
+.header .link:focus,
+.logo:hover,
+.logo:focus {
+  color: var(--main-accent-color);
+}
+
+/* поточна сторінка */
+.header .current {
+  color: var(--main-accent-color);
+}
+
+/* герой */
+.hero {
+  background-color: var(--background-secondary-cl);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-txt-color);
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  color: var(--light-txt-color);
+  background-color: var(--main-accent-color);
+
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--background-elements);
+  color: var(--main-headers-color);
+}
+
+/* секція особливостей */
+.special-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--main-headers-color);
+}
+
+/* чим займаємось, команда - заголовки */
+.section-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+
+  color: var(--main-headers-color);
+}
+
+/* команда */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+
+  text-align: center;
+  color: var(--main-headers-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background-color: var(--background-secondary-cl);
+}
+
+.contacts-adress {
+  font-style: normal;
+}
+
+.footer .logo,
+.link-map {
+  color: var(--light-txt-color);
+  text-decoration: none;
+}
+
+.footer .link {
+  color: var(--light-footer-links-cl);
+}
+
+.footer .logo:hover,
+.footer .logo:focus,
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--main-accent-color);
+}
+
+/* Портфоліо */
+.list-rbtn {
+  list-style: none;
+}
+
+.rbtn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  /* line-height: 26px; */
+  line-height: calc(26 / 16);
+
+  background-color: var(--background-elements);
+  color: var(--main-headers-color);
+
+  border-radius: 4px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  cursor: pointer;
+}
+
+.rbtn:hover,
+.rbtn:focus {
+  background-color: var(--main-accent-color);
+  color: var(--light-txt-color);
+}
+
+/* поточна кнопка */
+.currentrbtn {
+  background-color: var(--main-accent-color);
+  color: var(--light-txt-color);
+}
+
+.list-progects {
+  list-style: none;
+}
+
+.project-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+
+  text-align: left;
+  color: var(--main-headers-color);
+}
+
+.project-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
