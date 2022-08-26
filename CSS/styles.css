@@ -27,16 +27,63 @@ body {
 }
 
 /* reset */
-.link,
-.link-h-act-cont {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
   text-decoration: none;
+  color: currentColor;
 }
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .site-nav-list,
+.header-cont-list {
+  margin-top: 0;
+  margin-bottom: 0%;
+} */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  /* local tools */
+  outline: 2px solid tomato;
+  outline-offset: -2px;
 }
 
 /* шапка */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-style: normal;
@@ -45,53 +92,81 @@ body {
   line-height: calc(31 / 26);
   color: var(--main-headers-color);
   text-decoration: none;
+  /* на макеті 93px */
+  padding-right: 93px;
 }
 
 .logo-first-word {
   color: var(--main-accent-color);
 }
 
-.header .link,
-.link-h-act-cont {
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  padding-top: 24.5px;
+  padding-bottom: 24.5px;
+}
+
+.header-list,
+.header-cont-list {
+  display: flex;
+  justify-content: center;
+}
+
+.header-item {
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.header-item:last-child {
+  padding-right: 0;
+}
+
+.header-nav-link,
+.header-cont-link {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  /* padding для надійного :hover (почув у Репети)*/
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.header .link {
+.header-nav-link {
   color: var(--main-headers-color);
 }
 
-.link-h-act-cont {
+.header-cont-link {
   color: var(--main-txt-color);
 }
 
-/* + лого */
-.link-h-act-cont:hover,
-.link-h-act-cont:focus,
-.header .link:hover,
-.header .link:focus,
-.logo:hover,
-.logo:focus {
+/* поточна сторінка */
+.current-page {
   color: var(--main-accent-color);
 }
 
-/* поточна сторінка */
-.header .current {
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-cont-link:hover,
+.header-cont-link:focus,
+.logo:hover,
+.logo:focus {
   color: var(--main-accent-color);
 }
 
 /* герой */
 .hero {
   background-color: var(--background-secondary-cl);
+  text-align: center;
 }
 
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  /* or 136% */
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -108,6 +183,7 @@ body {
   color: var(--light-txt-color);
   background-color: var(--main-accent-color);
 
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -155,7 +231,7 @@ body {
   background-color: var(--background-secondary-cl);
 }
 
-.contacts-adress {
+.contacts-address {
   font-style: normal;
 }
 
