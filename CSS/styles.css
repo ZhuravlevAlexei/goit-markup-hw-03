@@ -52,15 +52,13 @@ img {
   padding: 0;
 }
 
-/* .site-nav-list,
-.header-cont-list {
-  margin-top: 0;
-  margin-bottom: 0%;
-} */
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  /* local tools */
+  outline: 2px solid blue;
+  outline-offset: -2px;
 }
 
 .container {
@@ -92,6 +90,9 @@ img {
   line-height: calc(31 / 26);
   color: var(--main-headers-color);
   text-decoration: none;
+}
+
+.header-logo {
   /* на макеті 93px */
   padding-right: 93px;
 }
@@ -194,14 +195,34 @@ img {
 }
 
 /* секція особливостей */
+.special-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .special-title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--main-headers-color);
 }
 
-/* чим займаємось, команда - заголовки */
+.special-item {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.special-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* секція "чим займаємось" */
+.sec-wht-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .section-title {
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -210,7 +231,34 @@ img {
   color: var(--main-headers-color);
 }
 
+.sec-wht-item {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.sec-wht-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 /* команда */
+.section-team {
+  background-color: var(--background-elements);
+}
+
+.sec-team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sec-team-item {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.sec-team-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -231,11 +279,22 @@ img {
   background-color: var(--background-secondary-cl);
 }
 
-.contacts-address {
+.footer-contacts-address {
   font-style: normal;
 }
 
-.footer .logo,
+.footer-logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.footer-logo,
 .link-map {
   color: var(--light-txt-color);
   text-decoration: none;
@@ -245,16 +304,28 @@ img {
   color: var(--light-footer-links-cl);
 }
 
-.footer .logo:hover,
-.footer .logo:focus,
-.footer .link:hover,
-.footer .link:focus {
+.footer-logo:hover,
+.footer-logo:focus,
+.footer-link:hover,
+.footer-link:focus {
   color: var(--main-accent-color);
 }
 
 /* Портфоліо */
-.list-rbtn {
-  list-style: none;
+
+.sec-prj-list-rbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.sec-prj-item-rbtn {
+  margin-right: 8px;
+}
+
+.sec-prj-item-rbtn:last-child {
+  margin-right: 0;
 }
 
 .rbtn {
@@ -282,13 +353,9 @@ img {
 }
 
 /* поточна кнопка */
-.currentrbtn {
+.current-rbtn {
   background-color: var(--main-accent-color);
   color: var(--light-txt-color);
-}
-
-.list-progects {
-  list-style: none;
 }
 
 .project-name {
