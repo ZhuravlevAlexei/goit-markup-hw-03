@@ -1,2 +1,2 @@
-# goit-markup-hw-01
-first homework at course fso65
+# goit-markup-hw-03
+third homework at course fso65
