@@ -14,6 +14,7 @@
   background-color: #ffffff;
   --background-secondary-cl: #2f303a;
   --background-elements: #f5f4fa;
+  --background-light-cl: #ffffff;
 
   /* Other */
   --number-of-gaps-two: 2;
@@ -229,6 +230,8 @@ address {
   background-color: var(--main-accent-color);
 
   border-radius: 4px;
+  border: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
 }
 
@@ -295,15 +298,15 @@ address {
 }
 
 .sec-team-list .img {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .sec-team-list .team-name {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .sec-team-list .team-position {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .sec-team-item {
@@ -312,6 +315,7 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-light-cl);
 }
 
 .team-name {
@@ -374,13 +378,6 @@ address {
   gap: 8px;
 }
 
-.sec-prj-item-rbtn {
-  padding-top: 6px;
-  padding-right: 22px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-}
-
 .rbtn {
   font-family: inherit;
   font-weight: 500;
@@ -391,10 +388,8 @@ address {
   color: var(--main-headers-color);
 
   border-radius: 4px;
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
-  border-left: none;
+  border: 0;
+  padding: 6px 22px;
   cursor: pointer;
 }
 
